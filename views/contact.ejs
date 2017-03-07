@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#EE6E73">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../materialize\css\materialize.min.css">
+    <link rel="stylesheet" href="../OwlCarousel2-2.2.0\dist\assets\owl.carousel.min.css">
+    <link rel="stylesheet" href="../OwlCarousel2-2.2.0\dist\assets\owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title></title>
+</head>
+<body class="container">
+<div class="row">
+	<div class="container">
+		<div class="section">
+			<div class="col s12">
+				<h2 class="header"> Vous voulez nous contacter ?</h2>
+				<p class="flow-text">
+				vous souhaiter nous envoyer une suggestion ?, appronfondir un détails en particulier ?. Vous êtes les bienvenue ! envoyez nous donc un message via le formulaire si-dessous et nous vous répondrons dans les meilleurs délais.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<form class="col s10 push-s1" name="formu" method="post">
+		<div class="col s6 left">
+			<div class="row">
+				<div class="input-field col s12 left">
+					<input  id="fname" type="text" name="nom" value="">
+					<label for="first_name">nom</label>
+				</div>
+			</div>
+		</div>
+		<div class="col s6 right">
+			<div class="row">
+				<div class="input-field col s12 right">
+					<input type="text" class="validate" id="last_name" name="prenom">
+					<label for="lname">prénom</label>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12">
+				<div class="input-field col s12">
+					<input type="email" name="email" class="validate" id="email">
+					<label for="email">Email</label>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12">
+				<div class="input-field col s12">
+					<textarea id="textarea1" class="materialize-textarea"></textarea>
+					<label for="textarea1">Message</label>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s6">
+				<div class="input-field col s12">
+					<input type="submit" class="waves-effect waves-light btn" name="button" value="Envoyer">
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+</body>
+<script src="../js\jquery-2.2.4.min.js"></script>
+  <script src="../materialize\js\materialize.js" charset="utf-8"></script>
+  <script src="../OwlCarousel2-2.2.0\dist\owl.carousel.js" charset="utf-8"></script>
+  <script src="../js/script.js" charset="utf-8"></script>
+  <footer>
+    <p id="result"></p>
+  </footer>
+</html>

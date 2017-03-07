@@ -1,11 +1,96 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#EE6E73">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="materialize\css\materialize.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.2.0\dist\assets\owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.2.0\dist\assets\owl.theme.default.min.css">
+    <link href="/stylesheets/style.css" rel="stylesheet" type="text/css">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+
+  <body class=" col s12 m4">
+
+    <header>
+      <nav>
+        <div class="nav-wrapper container">
+          <a href="#" class="brand-logo">Khasso - Bera</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse">
+            <i class="material-icons">menu</i>
+          </a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#">accueil</a></li>
+              <li><a href="contact">contact</a></li>
+              <li><a href="#">actualité</a></li>
+              <li><a href="#">partenaires</a></li>
+              <li><a href="#">évènements</a></li>
+              <li><a href="/a-propos">à propos</a></li>
+            </ul>
+
+            <ul class="side-nav" id="mobile-demo">
+              <li><a href="#">accueil</a></li>
+              <li><a href="contact">contact</a></li>
+              <li><a href="#">actualité</a></li>
+              <li><a href="#">partenaires</a></li>
+              <li><a href="#">évènements</a></li>
+              <li><a href="/a-propos">à propos</a></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="owl-carousel owl-theme col s12 m4">
+      <div class="img">
+        <img src="img/img_caroussel1.JPG" alt="">
+      </div>
+      <div class="img">
+        <img src="img/img_caroussel2.JPG" alt="">
+      </div>
+      <div class="img">
+        <img src="img/img_caroussel3.JPG" alt="">
+      </div>
+      <div class="img">
+        <img src="img/img_caroussel4.JPG" alt="">
+      </div>
+      <div class="img">
+        <img src="img/img_caroussel5.JPG" alt="">
+      </div>
+      <div class="img">
+        <img src="img/img_caroussel6.JPG" alt="">
+      </div>
+    </div>
+    <div class="section center" id="index-banner">
+      <div class="container center">
+        <div class="row center">
+          <div class="col s12 m12 l12">
+            <h1 class="header">l'Association Khasso - Bera</h1>
+            <h4 class="header black-text text-lighten-4">Maison de partage</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container center">
+      <div class="row center">
+        <div class="col s12 m12 l12 center">
+          <div class="section scrollspy center" id="materialdesign">
+            <h2 class="header center black-text text-lighten-4"> Qui somme nous ?</h2>
+            <p class="caption flow-text center">
+              Nous sommes une association qui souhaite valoriser les cultures de l'Afrique de l'Ouest ainsi que la culture Française.
+              Par le biais d’activité, action et animations autour de ces deux cultures. <a href="pages/a-propos.html"> en savoir plus</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
+  <script src="js\jquery-2.2.4.min.js"></script>
+  <script src="materialize\js\materialize.js" charset="utf-8"></script>
+  <script src="OwlCarousel2-2.2.0\dist\owl.carousel.js" charset="utf-8"></script>
+  <script src="js/script.js" charset="utf-8"></script>
 </html>
