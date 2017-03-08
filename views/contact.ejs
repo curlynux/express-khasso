@@ -1,19 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="theme-color" content="#EE6E73">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel="stylesheet" href="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../materialize\css\materialize.min.css">
-    <link rel="stylesheet" href="../OwlCarousel2-2.2.0\dist\assets\owl.carousel.min.css">
-    <link rel="stylesheet" href="../OwlCarousel2-2.2.0\dist\assets\owl.theme.default.min.css">
-    <link rel="stylesheet" href="../css/style.css">
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <title></title>
-</head>
-<body class="container">
+<%- include('head') %>
+<body>
+  <%- include('header') %>
+  <div class="container">
 <div class="row">
 	<div class="container">
 		<div class="section">
@@ -28,7 +18,7 @@
 </div>
 
 <div class="row">
-	<form class="col s10 push-s1" name="formu" method="post">
+	<form action="/contact" class="col s10 push-s1" name="formu" method="post">
 		<div class="col s6 left">
 			<div class="row">
 				<div class="input-field col s12 left">
@@ -70,12 +60,7 @@
 		</div>
 	</form>
 </div>
+</div>
 </body>
-<script src="../js\jquery-2.2.4.min.js"></script>
-  <script src="../materialize\js\materialize.js" charset="utf-8"></script>
-  <script src="../OwlCarousel2-2.2.0\dist\owl.carousel.js" charset="utf-8"></script>
-  <script src="../js/script.js" charset="utf-8"></script>
-  <footer>
-    <p id="result"></p>
-  </footer>
+<%- include('scriptsrc.ejs') %>
 </html>

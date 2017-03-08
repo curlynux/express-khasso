@@ -43,27 +43,4 @@ $(document).ready(function(){
     $('.if').removeClass('col s9 push-s1');
     $('.if').toggleClass('col s12');
   }
-
-  var fnom  = $('#fname');
-  var lname = $('#lname');
-  var form  = $('form');
-  var mail  = $('#email'); 
-    var $this = $(this);
-    function onReady(){
-	form.submit(OnSubmit);
-    }
-
-    function OnSubmit(){
-	$.ajax({
-	    type: $this.attr("method"),
-	    url: $this.attr("action"),
-	    data: $this.serialize(),
-	    seccess: OnSuccess
-	});
-
-	function OnSuccess(result) {
-	    $("#result").html(result);
-	    console.log(result);
-	}
-    }
 });
