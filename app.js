@@ -14,12 +14,13 @@ var users = require('./routes/users');
 var contact = require('./routes/contact');
 var a_propos = require('./routes/a-propos');
 var head = require('./routes/head');
-
+var nodemailer = require('nodemailer');
+var classUser = require('./public/js/es6Test');
 var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs', 'html');
+app.set('view engine', 'ejs');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -37,8 +38,34 @@ app.use('/users', users);
 app.use('/contact', contact);
 app.use('/a-propos', a_propos);
 
-app.post('/contact', function(req, res){
-  console.dir(req.body);
+app.post('/contact', (req, res) => {
+  var transporter = nodemailer.createTransport({
+    service: 'gmail',
+      auth: {
+        user: 'smpunchack@gmail.com',
+        pass: 'chadokan5'
+      }
+  });
+  var sender = req.body.email;
+  var sujet = req.body.sujet;
+  var texte = req.body.message;
+
+  var mailOptions = {
+    from: sender,
+    to: 'smpunchack@gmail.com',
+    subject: sujet,
+    text: texte
+    //html: '<p>le formulaire marche'
+  };
+
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      return console.error(error);
+    } else {
+      console.log('Message %s envoyer: %s', info.messageId, info.response);
+    }
+  });
+
   res.send('req recieved');
 });
 
