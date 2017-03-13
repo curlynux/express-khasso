@@ -1,34 +1,10 @@
 <!DOCTYPE html>
 <html>
-<% include head %>
+<%- include('head')%>
 <body>
 <header>
-      <nav>
-        <div class="nav-wrapper container">
-          <a href="#" class="brand-logo">Khasso - Bera</a>
-          <a href="#" data-activates="mobile-demo" class="button-collapse">
-            <i class="material-icons">menu</i>
-          </a>
-            <ul class="right hide-on-med-and-down">
-              <li><a href="../index.html">accueil</a></li>
-              <li><a href="pages/contact.html">contact</a></li>
-              <li><a href="#">actualité</a></li>
-              <li><a href="#">partenaires</a></li>
-              <li><a href="#">évènements</a></li>
-              <li><a href="pages/a-propos.html">à propos</a></li>
-            </ul>
-
-            <ul class="side-nav" id="mobile-demo">
-              <li><a href="../index.html">accueil</a></li>
-              <li><a href="pages/contact.html">contact</a></li>
-              <li><a href="#">actualité</a></li>
-              <li><a href="#">partenaires</a></li>
-              <li><a href="#">évènements</a></li>
-              <li><a href="pages/a-propos.html">à propos</a></li>
-            </ul>
-        </div>
-      </nav>
-    </header>
+  <%- include('header')%>
+</header>
 <div class="container">
 	<div class="row">
 		<div class="col s9 push-s1 if">

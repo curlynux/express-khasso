@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 var multer = require('multer');
 var upload = multer();
 var compression = require('compression');
+var nodemailer = require('nodemailer');
 
 //routes pages
 var index = require('./routes/index');
@@ -14,7 +15,7 @@ var users = require('./routes/users');
 var contact = require('./routes/contact');
 var a_propos = require('./routes/a-propos');
 var head = require('./routes/head');
-var nodemailer = require('nodemailer');
+var header = require('./routes/header');
 var classUser = require('./public/js/es6Test');
 var app = express();
 
@@ -37,6 +38,7 @@ app.use('/', index);
 app.use('/users', users);
 app.use('/contact', contact);
 app.use('/a-propos', a_propos);
+app.use('/header', header)
 
 app.post('/contact', (req, res) => {
   var transporter = nodemailer.createTransport({
