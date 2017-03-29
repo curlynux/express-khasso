@@ -11,6 +11,7 @@
     "babel-preset-env": "^1.2.1",
     "babel-preset-latest": "^6.22.0",
     "body-parser": "~1.16.0",
+    "chilkat_linux64": "^9.50.58",
     "compression": "^1.6.2",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.0",

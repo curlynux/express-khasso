@@ -741,6 +741,10 @@ chalk@^1.1.0:
     strip-ansi "^3.0.0"
     supports-color "^2.0.0"
 
+chilkat_linux64@^9.50.58:
+  version "9.50.58"
+  resolved "https://registry.yarnpkg.com/chilkat_linux64/-/chilkat_linux64-9.50.58.tgz#5f38c8b6419eaa5a1b3fc54e9e8fc6d116836465"
+
 chokidar@^1.6.1:
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-1.6.1.tgz#2f4447ab5e96e50fb3d789fd90d4c72e0e4c70c2"
